@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PIN Guesser</title>
+    <script src="random.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>
+        Sky Viewing Card PIN Guesser
+    </h1>
+    <h3>
+     Press the button below to generate a 4 digit number. <br />
+        <p>
+            <small>
+                If the output is a number less than 1000, <br />
+                append 0 to the beginning when entering it in your Sky box <br />
+                to make it a four digit number.
+            </small>
+         </p>
+    </h3>
+    <span 
+          id="random">
+    </span>
+    <span><br /></span>
+    <button 
+            id="randomgen"
+            onclick="guessPIN()">
+            Guess PIN
+    </button>
+</body>
+</html>
