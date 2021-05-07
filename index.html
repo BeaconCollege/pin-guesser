@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>PIN Guesser</title>
-    <script src="random.js"></script>
+    <script src="random.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://github.com/OldDigibox.png">
 </head>
+
 <body>
-    <h1>
-        Sky Viewing Card PIN Guesser
-    </h1>
-    <h3>
-       Press the button below to generate a 4 digit number. <br />
-    </h3>
-    <p id="readme"
-        <small>
-            <b>
-             If the output is a number less than 1000, <br />
-             append 0 to the beginning when entering it in your Sky box <br />
-             to make it a four digit number.
-            </b>
-        </small>
-    </p>
+    <h1>Sky Viewing Card PIN Guesser</h1>
+    <h3>Press the button below to generate a 4 digit number. <br /></h3>
+    <p id="readme"></p>
     <span id="random"></span>
     <span><br /></span>
-    <button 
-            id="randomgen"
-            onclick="guessPIN()">
-            Guess PIN
-    </button>
+    <button id="randomgen" onclick="guessPIN()">Guess PIN</button>
+    <p>list all the pins that have been guessed (there may be a lot of them)</p>
+    <button onclick="listPins()">List all guessed pins</button>
 </body>
+
 </html>
